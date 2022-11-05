@@ -1,0 +1,37 @@
+
+export(vgtransform, vgpath, read.svg,
+    vgellipse, vgline, vgpolyline, vgrect,
+    vgcontainer,
+    css2col, draw.arc,
+    subplot, style, "style<-", "markers<-",
+    defaultMarkers
+    )
+
+importFrom(grDevices, "col2rgb","colors")
+importFrom(graphics, "axis", "box", "lines", "plot.new", "plot.window", "points",
+    "polypath", "polygon", "segments", "strwidth", "text", "par",
+    "grconvertX", "grconvertY", "strheight", "rect", "title")
+importFrom(xml2, "read_xml","xml_remove","xml_attr","xml_attrs","xml_name",
+    "xml_find_all","xml_find_first","xml_ns_strip","xml_root",
+    "xml_add_child", "xml_attrs<-", "xml_children", "xml_has_attr", "xml_name<-" 
+    )
+importFrom("stats", "embed", "na.omit")
+
+S3method(vgtransform, vgshape)
+S3method(vgtransform, vgcontainer)
+S3method(plot, vgshape)
+S3method(print, vgshape)
+S3method(plot, vgcontainer)
+S3method(print, vgcontainer)
+S3method(range, vgcontainer)
+S3method(range, vgshape)
+
+S3method(style, vgcontainer)
+S3method(style, vgshape)
+S3method("style<-", vgcontainer)
+S3method("style<-", vgshape)
+
+S3method(as.character, vgcontainer)
+S3method(as.character, vgshape)
+
+

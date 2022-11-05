@@ -1,0 +1,16 @@
+Package: svgfun
+Type: Package
+Title: Read SVG files
+Version: 0.1.0
+Date: 2021-07-15
+Encoding: UTF-8
+Author: Kamil Bartoń
+Maintainer: Kamil Bartoń <kamil.barton@go2.pl>
+Description: Import vector graphics from SVG files, create basic shapes and 
+    paths from SVG path definitions, transform paths.
+License: GPL-2
+Depends: R (>= 3.5.0)
+Imports: graphics, xml2
+ByteCompile: yes
+NeedsCompilation: no
+Packaged: 2021-07-19 19:48:01 UTC; kb2
